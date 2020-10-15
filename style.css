@@ -70,18 +70,28 @@ a {
 .list i:hover {
   color: #70c3e4;
 }
-.btn {
-  background-color: #38aef3;
-  color: white;
-  padding: 15px 15px;
-  border-radius: 15px;
-}
-.btn:hover {
-  background-color: #40c8ff;
-  color: white;
-}
 .img {
   border-radius: 50%;
+}
+.neumorphist {
+  padding: 15px 15px;
+  border-radius: 15px;
+  border: none;
+  transition: box-shadow 0.1s, transform 0.1s;
+  box-shadow: 1.5px 1.5px 16px rgb(50, 50, 50, 0.3), -2px -2px 12px #53b5ee;
+  outline: none;
+}
+.neumorphist-button-primary {
+  box-shadow: inset 2px 2px 16px rgb(150, 150, 150, 0.01), inset -1px -1px 4px  rgb(50, 50, 50, 0.01),
+  6px 6px 16px rgb(50, 50, 50, 0.2), -2px -2px 12px #53b5ee, -0px -0px 2px 1px #53b5ee;
+border: 2px solid #53b5ee;
+}
+
+.neumorphist-button-primary:active {
+  box-shadow: inset 2px 2px 16px rgb(50, 50, 50, 0.01), inset -1px -1px 4px rgb(150, 150, 150, 0.01),
+  6px 6px 16px #53b5ee, -2px -2px 12px rgb(50, 50, 50, 0.2), -0px -0px 2px 1px #53b5ee;
+border: 2px solid #53b5ee;
+transform: scale(0.97);
 }
 
 
